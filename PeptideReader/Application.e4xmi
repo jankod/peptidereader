@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_ztkfUD0sEeaH1P2JoldW2Q" elementId="org.eclipse.e4.ide.application" bindingContexts="_ztlGYD0sEeaH1P2JoldW2Q">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_ztkfUT0sEeaH1P2JoldW2Q" label="PeptideReader" iconURI="platform:/plugin/PeptideReader/icons/skeleton-icon-16.png" width="800" height="600">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_ztlGdz0sEeaH1P2JoldW2Q">
+      <children xsi:type="advanced:Perspective" xmi:id="_ztltcD0sEeaH1P2JoldW2Q">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_ztltcT0sEeaH1P2JoldW2Q">
+          <children xsi:type="basic:PartStack" xmi:id="_ztltcj0sEeaH1P2JoldW2Q">
+            <children xsi:type="basic:Part" xmi:id="_ztltcz0sEeaH1P2JoldW2Q" contributionURI="bundleclass://PeptideReader/hr.semgen.pr.parts.SamplePart" label="Sample Part"/>
+          </children>
+        </children>
+      </children>
+    </children>
+    <mainMenu xmi:id="_ztlGcD0sEeaH1P2JoldW2Q" elementId="menu:org.eclipse.ui.main.menu">
+      <children xsi:type="menu:Menu" xmi:id="_ztlGcT0sEeaH1P2JoldW2Q" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ztlGcj0sEeaH1P2JoldW2Q" label="Open" iconURI="platform:/plugin/PeptideReader/icons/sample.png" command="_ztlGZz0sEeaH1P2JoldW2Q"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ztlGcz0sEeaH1P2JoldW2Q" label="Save" iconURI="platform:/plugin/PeptideReader/icons/save_edit.png" command="_ztlGaj0sEeaH1P2JoldW2Q"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ztlGdD0sEeaH1P2JoldW2Q" label="Quit" command="_ztlGYz0sEeaH1P2JoldW2Q"/>
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_M24Z4D6dEeaHZsEAceP8Aw" elementId="peptidereader.handledmenuitem.import" label="Import..." iconURI="platform:/plugin/PeptideReader/icons/import.gif" command="_zSFxAD6cEeaHZsEAceP8Aw"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_ztlGdT0sEeaH1P2JoldW2Q" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_ztlGdj0sEeaH1P2JoldW2Q" label="About" command="_ztlGbT0sEeaH1P2JoldW2Q"/>
+      </children>
+    </mainMenu>
+    <trimBars xmi:id="_ztltdD0sEeaH1P2JoldW2Q">
+      <children xsi:type="menu:ToolBar" xmi:id="_ztltdT0sEeaH1P2JoldW2Q" elementId="toolbar:org.eclipse.ui.main.toolbar">
+        <children xsi:type="menu:HandledToolItem" xmi:id="_C2S9YD6rEea7gc6lPjDFsA" elementId="peptidereader.handledtoolitem.0" iconURI="platform:/plugin/PeptideReader/icons/import.gif" command="_zSFxAD6cEeaHZsEAceP8Aw"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ztltdj0sEeaH1P2JoldW2Q" iconURI="platform:/plugin/PeptideReader/icons/sample.png" command="_ztlGZz0sEeaH1P2JoldW2Q"/>
+        <children xsi:type="menu:HandledToolItem" xmi:id="_ztltdz0sEeaH1P2JoldW2Q" iconURI="platform:/plugin/PeptideReader/icons/save_edit.png" command="_ztlGaj0sEeaH1P2JoldW2Q"/>
+      </children>
+    </trimBars>
+  </children>
+  <handlers xmi:id="_ztlGZD0sEeaH1P2JoldW2Q" elementId="PeptideReader.handler.quitCommand" contributionURI="bundleclass://PeptideReader/hr.semgen.pr.handlers.QuitHandler" command="_ztlGYz0sEeaH1P2JoldW2Q"/>
+  <handlers xmi:id="_ztlGaD0sEeaH1P2JoldW2Q" elementId="PeptideReader.handler.openCommand" contributionURI="bundleclass://PeptideReader/hr.semgen.pr.handlers.OpenHandler" command="_ztlGZz0sEeaH1P2JoldW2Q"/>
+  <handlers xmi:id="_ztlGaz0sEeaH1P2JoldW2Q" elementId="PeptideReader.handler.saveCommand" contributionURI="bundleclass://PeptideReader/hr.semgen.pr.handlers.SaveHandler" command="_ztlGaj0sEeaH1P2JoldW2Q"/>
+  <handlers xmi:id="_ztlGbj0sEeaH1P2JoldW2Q" elementId="PeptideReader.handler.aboutCommand" contributionURI="bundleclass://PeptideReader/hr.semgen.pr.handlers.AboutHandler" command="_ztlGbT0sEeaH1P2JoldW2Q"/>
+  <handlers xmi:id="_vunqQD6cEeaHZsEAceP8Aw" elementId="PeptideReader.handler.importCommand" contributionURI="bundleclass://PeptideReader/hr.semgen.pr.handlers.ImportHandler" command="_zSFxAD6cEeaHZsEAceP8Aw"/>
+  <bindingTables xmi:id="_ztlGZT0sEeaH1P2JoldW2Q" bindingContext="_ztlGYD0sEeaH1P2JoldW2Q">
+    <bindings xmi:id="_ztlGZj0sEeaH1P2JoldW2Q" keySequence="M1+Q" command="_ztlGYz0sEeaH1P2JoldW2Q"/>
+    <bindings xmi:id="_ztlGaT0sEeaH1P2JoldW2Q" keySequence="M1+O" command="_ztlGZz0sEeaH1P2JoldW2Q"/>
+    <bindings xmi:id="_ztlGbD0sEeaH1P2JoldW2Q" keySequence="M1+S" command="_ztlGaj0sEeaH1P2JoldW2Q"/>
+    <bindings xmi:id="_ztlGbz0sEeaH1P2JoldW2Q" keySequence="M1+A" command="_ztlGbT0sEeaH1P2JoldW2Q"/>
+  </bindingTables>
+  <rootContext xmi:id="_ztlGYD0sEeaH1P2JoldW2Q" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_ztlGYT0sEeaH1P2JoldW2Q" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_ztlGYj0sEeaH1P2JoldW2Q" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_ztlGYz0sEeaH1P2JoldW2Q" elementId="org.eclipse.ui.file.exit" commandName="quitCommand"/>
+  <commands xmi:id="_ztlGZz0sEeaH1P2JoldW2Q" elementId="PeptideReader.open" commandName="openCommand"/>
+  <commands xmi:id="_ztlGaj0sEeaH1P2JoldW2Q" elementId="org.eclipse.ui.file.save" commandName="saveCommand"/>
+  <commands xmi:id="_ztlGbT0sEeaH1P2JoldW2Q" elementId="org.eclipse.ui.help.aboutAction" commandName="aboutCommand"/>
+  <commands xmi:id="_zSFxAD6cEeaHZsEAceP8Aw" elementId="PeptideReader.import" commandName="importCommand"/>
+  <addons xmi:id="_ztkfUj0sEeaH1P2JoldW2Q" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_ztkfUz0sEeaH1P2JoldW2Q" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_ztkfVD0sEeaH1P2JoldW2Q" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_ztkfVT0sEeaH1P2JoldW2Q" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_ztkfVj0sEeaH1P2JoldW2Q" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_ztkfVz0sEeaH1P2JoldW2Q" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_ztkfWD0sEeaH1P2JoldW2Q" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

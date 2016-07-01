@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration debug="false">
+
+	<!-- <configuration debug="false" scan="true" /> -->
+
+	<appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+		<encoder>
+			<pattern>%C.%M\(%file:%line\) %msg%n</pattern>
+		</encoder>
+	</appender>
+
+	<root level="DEBUG">
+		<appender-ref ref="STDOUT" />
+	</root>
+	<!-- <logger name="org.springframework" level="INFO" /> -->
+	<!-- <logger name="ch.qos.logback" level="OFF" additivity="false" /> -->
+	<!-- <logger name="hr.ja" level="ALL" /> -->
+
+</configuration>

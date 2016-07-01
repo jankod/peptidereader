@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin>
+
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            name="PeptideReader"
+            application="org.eclipse.e4.ui.workbench.swt.E4Application">
+         <property
+               name="applicationCSS"
+               value="platform:/plugin/PeptideReader/css/default.css">
+         </property>
+         <property
+               name="appName"
+               value="PeptideReader">
+         </property>
+         <property
+               name="lifeCycleURI"
+               value="bundleclass://PeptideReader/hr.semgen.pr.E4LifeCycle">
+         </property>
+         <property
+               name="windowImages"
+               value="icons/Skeleton-icon.png,icons/Skeleton-icon 64.png">
+         </property>
+      </product>
+   </extension>
+
+</plugin>
